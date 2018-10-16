@@ -39,6 +39,7 @@ traverse = function (parent, path) {
         rl.question(node[0] + ' ? ', function(answer) {
             if (answer.match('y')) { // yes
                 traverse(node, 1);
+                console.log(answer)
             } else {
                 traverse(node, 2);
             }
