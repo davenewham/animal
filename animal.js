@@ -22,6 +22,7 @@ traverse = function (parent, path) {
                 console.log(msg.again);
                 start();
             } else {
+                console.log(rl.question)
                 rl.question(msg.itWas, function(itWas) {
                     rl.question(
                         msg.differ + itWas + msg.fromA + node + ': ',
