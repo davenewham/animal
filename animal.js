@@ -27,6 +27,7 @@ traverse = function (parent, path) {
                     rl.question(
                         msg.differ + itWas + msg.fromA + node + ': ',
                         function (differ) {
+                            parent[path.X] = [differ, itWas, node];
                             parent[path] = [differ, itWas, node];
                             console.log(msg.again);
                             start();
